@@ -164,7 +164,7 @@ const STEPS = [
   {
     n: "02",
     icon: Cpu,
-    title: "AI analyzes & roasts",
+    title: "AI analyzes & scores",
     desc: "Gemini scores against ATS rubrics, surfaces 5 issues + 5 strengths, and drafts rewrites.",
     Visual: AnalyzeVisual,
   },
