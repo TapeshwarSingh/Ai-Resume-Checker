@@ -12,6 +12,10 @@ mongoose.set("strictQuery", true);
 
 
 async function connectDB() {
+  if (mongoose.connection.readyState >= 1) {
+    return;
+  }
+
   const conn = await mongoose.connect(env.mongoUri, {
     serverSelectionTimeoutMS: 10_000,
   });
