@@ -13,7 +13,7 @@ if (missing.length) {
 
 module.exports = {
   nodeEnv: process.env.NODE_ENV || "development",
-  port: Number(process.env.PORT) || 5001,
+  port: Number(process.env.PORT) || 8000,
   mongoUri: process.env.MONGO_URI,
   jwtSecret: process.env.JWT_SECRET,
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || "7d",
@@ -26,6 +26,6 @@ module.exports = {
     .map((o) => o.trim())
     .filter(Boolean),
   geminiApiKey: process.env.GEMINI_API_KEY || "",
-  geminiModel: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+  geminiModel: process.env.GEMINI_MODEL || "gemini-3.6-flash",
   isProd: process.env.NODE_ENV === "production",
 };
